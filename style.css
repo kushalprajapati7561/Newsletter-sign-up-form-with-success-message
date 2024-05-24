@@ -1,0 +1,168 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    width: 900px;
+    height: 510px;
+    display: flex;
+    background-color: rgb(246, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 238, 238);
+    border-radius: 4%;
+}
+
+.left {
+    width: 560px;
+    height: 510px;
+    /* background-color: #b95656; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.left h1 {
+    width: 500px;
+    margin-top: 55px;
+    font-size: 3.3rem;
+}
+
+.left p {
+    width: 350px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.left ul {
+    width: 400px;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.left ul li {
+    margin-top: 13px;
+}
+
+.left ul li i {
+    margin-right: 10px;
+    color: #eee8e8;
+    border-radius: 50%;
+    background-color: orangered;
+}
+
+.left form {
+    margin-top: 50px;
+}
+
+.left input {
+    margin-top: 10px;
+    width: 400px;
+    border-color: beige;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    /* border: 0; */
+}
+
+.left button {
+    margin-top: 10px;
+    width: 400px;
+    border: 0;
+    height: 40px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.right {
+    margin: 0px 22px;
+}
+
+.right img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-left: 9px;
+}
+
+@media (max-width: 900px) {
+    .main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .right img {
+        margin: 0px 0px;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        margin-left: 40px;
+    }
+
+    .left h1 {
+        width: 100%;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .left p {
+        width: 90%;
+    }
+
+    .left ul {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .left ul li i {
+        margin-right: 10px;
+        color: #eee8e8;
+        border-radius: 50%;
+        background-color: orangered;
+    }
+
+    .left form {
+        margin-top: 30px;
+    }
+
+    .left input {
+        width: 85%;
+    }
+
+    .left button {
+        margin-top: 10px;
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+}
